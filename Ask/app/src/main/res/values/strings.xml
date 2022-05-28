@@ -5,4 +5,9 @@
     <string name="user">Username</string>
     <string name="register">Register</string>
     <string name="sign_up">Sign Up</string>
+    <string name="training">Training</string>
+    <string name="welcome">Welcome</string>
+    <string name="enjoy">Enjoy</string>
+    <string name="createMatch">Create a Match</string>
+    <string name="Statistics">Statistics</string>
 </resources>
