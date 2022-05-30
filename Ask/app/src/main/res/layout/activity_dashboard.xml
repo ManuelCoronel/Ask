@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,7 @@
     tools:context=".DashboardActivity">
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="285dp"
         android:layout_height="68dp"
         android:background="#E9FCFD"
@@ -36,14 +36,14 @@
             android:layout_width="53dp"
             android:layout_height="43dp"
             android:layout_marginStart="16dp"
-            android:tint="#FC5185"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_stats" />
-    </android.support.constraint.ConstraintLayout>
+            app:srcCompat="@drawable/ic_stats"
+            app:tint="#FC5185" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="285dp"
         android:layout_height="68dp"
@@ -75,9 +75,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_create_match1" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="285dp"
         android:layout_height="68dp"
@@ -107,14 +107,14 @@
             android:layout_width="68dp"
             android:layout_height="43dp"
             android:layout_marginStart="16dp"
-            android:tint="#FC5185"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/grupo" />
-    </android.support.constraint.ConstraintLayout>
+            app:srcCompat="@drawable/grupo"
+            app:tint="#FC5185" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="285dp"
         android:layout_height="68dp"
@@ -145,12 +145,12 @@
             android:layout_height="33dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="16dp"
-            android:tint="#FC5185"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/usuario" />
+            app:srcCompat="@drawable/usuario"
+            app:tint="#FC5185" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView13"
@@ -164,10 +164,10 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="97dp"
+        android:layout_width="100dp"
         android:layout_height="28dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="21dp"
         android:text="@string/user"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -176,26 +176,28 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="104dp"
-        android:layout_height="26dp"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:text="@string/welcome"
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="45dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/salida" />
+        android:layout_marginEnd="312dp"
+        android:text="Salir"
+        android:background="#3FC1C9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
