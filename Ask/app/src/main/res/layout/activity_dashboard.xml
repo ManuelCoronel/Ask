@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/botonTraining"
             android:layout_width="88dp"
             android:layout_height="33dp"
             android:text="@string/training"

@@ -10,4 +10,9 @@
     <string name="enjoy">Enjoy</string>
     <string name="createMatch">Create a Match</string>
     <string name="Statistics">Statistics</string>
+    <string name="newTraining">New Training</string>
+    <string name="selectTopic">Select topic</string>
+    <string name="numberQuestions"># Questions</string>
+    <string name="time">Time</string>
+    <string name="createTraining">Create</string>
 </resources>
