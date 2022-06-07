@@ -2,10 +2,10 @@
 
 Mobile application for the preparation of icfes tests. Ask allows the student to individually or jointly answer a series of questions in which it will allow to measure the levels of knowledge of the students in different areas (mathematics, history, etc).
 
-
-
-![Image text](https://github.com/ManuelCoronel/Ask/blob/main/Ask/app/src/main/res/drawable/logo__3_.png)
-
+<br>
+<p align="center">
+<img src="https://github.com/ManuelCoronel/Ask/blob/main/Ask/app/src/main/res/drawable/logo__3_.png"/>
+</p>
 
 Features:
 
