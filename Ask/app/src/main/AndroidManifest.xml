@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ask">
         <activity
-            android:name=".NewTrainingActivity"
+            android:name=".vista.NewTrainingActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".vista.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".vista.DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".vista.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

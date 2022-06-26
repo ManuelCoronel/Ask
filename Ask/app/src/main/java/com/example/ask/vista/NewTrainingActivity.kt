@@ -1,9 +1,10 @@
-package com.example.ask
+package com.example.ask.vista
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.example.ask.R
 
 class NewTrainingActivity : AppCompatActivity() {
 
