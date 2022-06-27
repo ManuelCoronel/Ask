@@ -8,78 +8,78 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="315dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="@string/newTraining"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/topicButton"
         android:layout_width="176dp"
         android:layout_height="69dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#3FC1C9"
         android:text="@string/selectTopic"
         android:textColor="#FFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="131dp"
         android:layout_height="33dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
         android:text="@string/numberQuestions"
         android:textSize="22sp"
         android:textStyle=""
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="116dp"
         android:layout_height="36dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="36dp"
         android:text="Time"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintTop_toBottomOf="@+id/topicButton"
+        app:layout_constraintVertical_bias="0.101" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="59dp"
         android:layout_height="31dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="118dp"
         android:layout_height="54dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#3FC1C9"
         android:text="@string/createTraining"
-        android:textSize="20sp"
         android:textColor="#FFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -90,8 +90,8 @@
         android:id="@+id/btnBack"
         android:layout_width="69dp"
         android:layout_height="66dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back"

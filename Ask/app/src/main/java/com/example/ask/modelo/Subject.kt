@@ -8,12 +8,13 @@ import retrofit2.Response
 class Subject {
     constructor()
 
+
     public fun callServiceGetSubjects(): List<SubjectDataCollectionItem> {
         val questionService: QuestionService = RestEngine.getRestEngine().create(QuestionService::class.java)
         val result: Call<List<SubjectDataCollectionItem>> = questionService.listSubject()
-        println("Holaaaaaaaa")
-        println(result)
-        var lista: List<SubjectDataCollectionItem>? = null
+
+        var lista: List<SubjectDataCollectionItem> = listOfNotNull()
+
         result.enqueue(object : Callback<List<SubjectDataCollectionItem>> {
             override fun onFailure(call: Call<List<SubjectDataCollectionItem>>, t: Throwable) {
             }
@@ -23,13 +24,11 @@ class Subject {
                 response: Response<List<SubjectDataCollectionItem>>
             ) {
                 lista = response.body()!!
-                println(lista)
-                println(lista!![0].name)
 
             }
-        }
+          }
         )
-        return lista!!
+        return lista
     }
 
 }
