@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ask">
         <activity
+            android:name=".vista.TopicsActivity"
+            android:exported="false" />
+        <activity
             android:name=".vista.NewTrainingActivity"
             android:exported="false" />
         <activity

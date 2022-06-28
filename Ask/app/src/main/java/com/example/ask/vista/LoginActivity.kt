@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
                     ?.addOnSuccessListener(OnSuccessListener<GetTokenResult> { result ->
                         val idToken = result.token
                         //Do whatever
-                        //System.out.println(idToken)
+                        System.out.println(idToken)
                     })
 
                 FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
@@ -87,7 +87,7 @@ class LoginActivity : AppCompatActivity() {
                     // Get new FCM registration token
                     val token = task.result
 
-                    //System.out.println(token)
+                   // System.out.println(token)
                 })
                 val intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)

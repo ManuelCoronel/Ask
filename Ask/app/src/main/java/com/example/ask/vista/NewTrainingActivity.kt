@@ -32,6 +32,11 @@ class NewTrainingActivity : AppCompatActivity() {
     private fun loadSubject() {
         println("Subjects::::")
         println(getSubjects())
+        val intent = Intent(this, TopicsActivity::class.java)
+        var bundle : Bundle
+        bundle.putSerializable("subjects",getSubjects())
+        intent.putExtra("subjects",getSubjects())
+        startActivity(intent)
 
     }
 

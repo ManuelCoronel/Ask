@@ -1,8 +1,11 @@
 package com.example.ask.modelo
 
-class SubjectDataCollection : ArrayList<SubjectDataCollectionItem>()
+import java.io.Serializable
 
-data class SubjectDataCollectionItem(
+class SubjectDataCollection  : ArrayList<SubjectDataCollectionItem>()
+
+data class SubjectDataCollectionItem (
     val id: Int,
     val name: String
-)
+):Serializable
+
