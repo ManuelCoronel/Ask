@@ -21,27 +21,6 @@ Features:
 
 
 
-## Authors ✒️
- 
-**Manuel  Coronel Andrade - Developer**
-
--   <https://github.com/ManuelCoronel>
-
-**kevin Jimenez - Developer**
-
--   <https://github.com/Kevinjimenez0119>
-
-**Jorge Perez - Developer**
-
--   <https://github.com/SHUNNIORR>
-
-**Jhoser Pachecho - Developer**
-
--   <https://github.com/jhoserpacheco>
-
-
-   
-
 ## Expressions of Gratitude🎁
 
 * Tell others about this project 📢
