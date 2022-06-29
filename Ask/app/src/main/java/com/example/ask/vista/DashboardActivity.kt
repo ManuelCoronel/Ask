@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.ask.R
 import com.google.firebase.auth.FirebaseAuth
+import com.example.ask.controlador.Controller
+import com.example.ask.controlador.Controller.Companion.getSubjects
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -21,6 +23,7 @@ class DashboardActivity : AppCompatActivity() {
         nombre = findViewById(R.id.textView9)
         salir = findViewById(R.id.btn_salir)
         btnTraining = findViewById(R.id.botonTraining)
+
         salir.setOnClickListener {
             salir()
         }

@@ -25,17 +25,12 @@ class NewTrainingActivity : AppCompatActivity() {
         }
 
         btnTopic.setOnClickListener{
-            loadSubject()}
+            irTopics()}
 
     }
 
-    private fun loadSubject() {
-        println("Subjects::::")
-        println(getSubjects())
+    private fun irTopics() {
         val intent = Intent(this, TopicsActivity::class.java)
-        var bundle : Bundle
-        bundle.putSerializable("subjects",getSubjects())
-        intent.putExtra("subjects",getSubjects())
         startActivity(intent)
 
     }

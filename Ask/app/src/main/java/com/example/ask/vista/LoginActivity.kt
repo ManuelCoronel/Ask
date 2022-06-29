@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.ask.R
+import com.example.ask.controlador.Controller
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
@@ -31,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         registerButton = findViewById(R.id.btn_sign_up)
         //btn.setOnClickListener(irRegistro())
         mbutton = findViewById(R.id.btn_sign_in)
-
+        Controller.getSubjects()
         mbutton.setOnClickListener {
             loginUser()
         }

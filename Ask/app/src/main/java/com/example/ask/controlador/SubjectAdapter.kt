@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ask.R
 import com.example.ask.modelo.SubjectDataCollectionItem
 import android.widget.RadioButton
-class SubjectAdapter(private val dataSet: Array<SubjectDataCollectionItem>) :
+class SubjectAdapter(private val dataSet: List<SubjectDataCollectionItem>) :
     RecyclerView.Adapter<SubjectAdapter.ViewHolder>() {
 
     /**
@@ -26,8 +26,7 @@ class SubjectAdapter(private val dataSet: Array<SubjectDataCollectionItem>) :
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
-        val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.subject_item, viewGroup, false)
+        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.subject_item, viewGroup, false)
 
         return ViewHolder(view)
     }

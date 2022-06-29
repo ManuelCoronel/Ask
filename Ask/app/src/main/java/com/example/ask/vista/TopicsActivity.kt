@@ -5,8 +5,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ask.R
+import com.example.ask.controlador.Controller
 import com.example.ask.controlador.SubjectAdapter
 import com.example.ask.modelo.SubjectDataCollectionItem
+import com.example.ask.controlador.Controller.Companion.getSubjects
+import com.example.ask.controlador.Controller.Companion.subjects
 
 
 class TopicsActivity : AppCompatActivity() {
@@ -22,8 +25,9 @@ class TopicsActivity : AppCompatActivity() {
         var linearLayout = LinearLayoutManager(this)
         recyclerView.layoutManager =linearLayout
 
-        val dataSet: Array<SubjectDataCollectionItem> = arrayOf<SubjectDataCollectionItem>(SubjectDataCollectionItem(1,"Filosofia"),SubjectDataCollectionItem(2,"Matematicas"))
-        this.recyclerView.adapter = SubjectAdapter(dataSet)
+        val dataSet: List<SubjectDataCollectionItem>? = subjects
+
+        this.recyclerView.adapter = dataSet?.let { SubjectAdapter(it) }
 
 
 
