@@ -1,5 +1,7 @@
 package com.example.ask.modelo
 
+import android.widget.Toast
+import com.example.ask.controlador.Controller
 import com.example.ask.util.RestEngine
 import retrofit2.Call
 import retrofit2.Callback
@@ -25,14 +27,11 @@ class Subject {
             ) {
                 lista = response.body()!!
                 subjects = lista
-                println("BODY")
-                println(response)
-                println(response.body())
+                println("CARGA DE SUBJECTS COMPLETADA")
+
             }
         }
         )
-        println("EN EL SERVICIO")
-        println(lista)
 
         return lista
     }

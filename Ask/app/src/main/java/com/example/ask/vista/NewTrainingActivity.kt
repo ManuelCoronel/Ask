@@ -12,6 +12,7 @@ import com.example.ask.controlador.Controller.Companion.getSubjects
 class NewTrainingActivity : AppCompatActivity() {
 
     private lateinit var btn: ImageView
+    private lateinit var checked: ImageView
     private lateinit var  btnTopic : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,13 +20,20 @@ class NewTrainingActivity : AppCompatActivity() {
 
         btn = findViewById(R.id.btnBack)
         btnTopic = findViewById(R.id.topicButton)
-
+        checked = findViewById(R.id.completados)
         btn.setOnClickListener{
             irTraining()
         }
 
         btnTopic.setOnClickListener{
             irTopics()}
+        var completado = getIntent().getExtras()
+
+        if (completado != null) {
+            if(completado.getInt("checked")==1){
+                checked.visibility = View.VISIBLE
+            }
+        }
 
     }
 
