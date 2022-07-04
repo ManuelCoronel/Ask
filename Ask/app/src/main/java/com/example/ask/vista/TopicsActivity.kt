@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ask.R
 import com.example.ask.controlador.Controller
 import com.example.ask.controlador.SubjectAdapter
-import com.example.ask.modelo.SubjectDataCollectionItem
 import com.example.ask.controlador.Controller.Companion.getSubjects
 import com.example.ask.controlador.Controller.Companion.subjects
+import com.example.ask.modelo.SubjectDataCollectionItem
 
 
 class TopicsActivity : AppCompatActivity() {

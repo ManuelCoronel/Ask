@@ -78,6 +78,9 @@ class LoginActivity : AppCompatActivity() {
                         val idToken = result.token
                         //Do whatever
                         System.out.println(idToken)
+                        if (idToken != null) {
+                            Controller.token = idToken
+                        }
                     })
 
                 FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->

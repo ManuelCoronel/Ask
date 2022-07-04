@@ -7,6 +7,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import com.example.ask.controlador.Controller.Companion.subjects
+import okio.ByteString.Companion.encode
 
 class Subject {
     constructor()
@@ -15,7 +16,10 @@ class Subject {
     public fun callServiceGetSubjects(): List<SubjectDataCollectionItem> {
         val questionService: QuestionService = RestEngine.getRestEngine().create(QuestionService::class.java)
         val result: Call<List<SubjectDataCollectionItem>> = questionService.listSubject()
+        println("LA URL ES")
 
+        //questionService.listSubject().request().url.encodedPath = questionService.listSubject().request().url.encodedPath.plus("?token=").plus(4)
+        println(questionService.listSubject().request().url)
         var lista: List<SubjectDataCollectionItem> = listOfNotNull()
         result.enqueue(object : Callback<List<SubjectDataCollectionItem>> {
             override fun onFailure(call: Call<List<SubjectDataCollectionItem>>, t: Throwable) {

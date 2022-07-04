@@ -9,6 +9,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ask.R
+import com.example.ask.modelo.QuestionDataCollectionItem
+import com.example.ask.modelo.Subject
 import com.example.ask.modelo.SubjectDataCollectionItem
 import com.example.ask.vista.NewTrainingActivity
 
@@ -54,7 +56,8 @@ class SubjectAdapter(private val dataSet: List<SubjectDataCollectionItem>) :
         viewHolder.button.setOnClickListener {
             println("Tema seleccionado:")
             println(dataSet[position].id)
-
+            Controller.idTopic = dataSet[position].id.toString()
+            Controller.getQuestions()
             val intent = Intent(context, NewTrainingActivity::class.java)
             intent.putExtra("checked", 1)
             with(context) {
