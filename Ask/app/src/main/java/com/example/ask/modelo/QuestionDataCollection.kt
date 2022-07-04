@@ -11,6 +11,6 @@ data class QuestionDataCollectionItem(
     val answerD: String,
     val id: Int,
     val question: String,
-    val subject: QuestionDataCollectionItem
+    val subject: SubjectDataCollectionItem
 )
 

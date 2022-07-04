@@ -10,6 +10,6 @@ interface QuestionService {
     fun listSubject(): Call<List<SubjectDataCollectionItem>>
 
     @GET("private/api/QuestionList/{id}")
-    fun listQuestion(@Path("id") id :Int,@Header("Authorization")authHeader : String ): Call<List<QuestionDataCollectionItem>>
+    fun listQuestion(@Path("id") id :Int): Call<List<QuestionDataCollectionItem>>
 
 }

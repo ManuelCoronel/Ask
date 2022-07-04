@@ -15,7 +15,7 @@ class Controller {
 
        lateinit var subjects : List<SubjectDataCollectionItem>
        lateinit var  questions : List<QuestionDataCollectionItem>
-        lateinit var token : String
+         var token : String = ""
        lateinit var idTopic:String
 
         public fun getSubjects(){
@@ -25,7 +25,7 @@ class Controller {
 
         public  fun getQuestions(){
             var question = Question()
-            questions = question.listQuestion(Integer.parseInt(idTopic),token)
+            questions = question.listQuestion(Integer.parseInt(idTopic))
         }
     }
     }
