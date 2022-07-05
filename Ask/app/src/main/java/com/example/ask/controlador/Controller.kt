@@ -14,7 +14,7 @@ class Controller {
 
 
        lateinit var subjects : List<SubjectDataCollectionItem>
-       lateinit var  questions : List<QuestionDataCollectionItem>
+       var  questions : List<QuestionDataCollectionItem> = listOfNotNull()
          var token : String = ""
        lateinit var idTopic:String
 

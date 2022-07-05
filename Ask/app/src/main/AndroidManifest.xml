@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ask">
         <activity
-            android:name=".MatchActivity"
+            android:name=".ScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.MatchActivity"
             android:exported="false" />
         <activity
             android:name=".vista.TopicsActivity"

@@ -33,6 +33,7 @@ class LoginActivity : AppCompatActivity() {
         //btn.setOnClickListener(irRegistro())
         mbutton = findViewById(R.id.btn_sign_in)
         Controller.getSubjects()
+        Controller.getSubjects()
         mbutton.setOnClickListener {
             loginUser()
         }

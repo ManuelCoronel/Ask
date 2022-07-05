@@ -59,18 +59,20 @@
         app:layout_constraintVertical_bias="0.101" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/numberQuestions"
         android:layout_width="59dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:text="0"
         android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/createTraining"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/createTraining"
@@ -100,14 +102,14 @@
         app:tint="#FC5185" />
 
     <ImageView
-        android:visibility="invisible"
         android:id="@+id/completados"
         android:layout_width="50dp"
         android:layout_height="54dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="128dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toEndOf="@+id/topicButton"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/ic_check_mark_svgrepo_com"
         app:tint="#00ff00" />
 
