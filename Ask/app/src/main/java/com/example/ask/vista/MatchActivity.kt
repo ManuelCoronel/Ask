@@ -1,5 +1,6 @@
 package com.example.ask.vista
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -21,6 +22,7 @@ class MatchActivity : AppCompatActivity() {
     lateinit var  answerD : RadioButton
     lateinit var  radioG : RadioGroup
      var id : Int = 0
+    var correctas : Int = 0
     var maxQuestion:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,25 +45,52 @@ class MatchActivity : AppCompatActivity() {
 
                 group, checkedId ->
             when(checkedId){
-                R.id.answerA -> resetRadioButton(group)
-                R.id.answerB -> resetRadioButton(group)
-                R.id.answerC -> resetRadioButton(group)
-                R.id.answerD -> resetRadioButton(group)
-
+                R.id.answerA -> validateA(group)
+                R.id.answerB -> validateB(group)
+                R.id.answerC -> validateC(group)
+                R.id.answerD -> validateD(group)
             }
 
             loadQuestion()
         })
 
     }
+    fun validateA(view: View){
+        if(answerA.isChecked && Controller.questions.get(id).answerCorrect == "A"){
+            correctas++ }
+        resetRadioButton(radioG)
+    }
+
+    fun validateB(view: View){
+        if(answerB.isChecked && Controller.questions.get(id).answerCorrect == "B"){
+            correctas++ }
+        resetRadioButton(radioG)
+    }
+
+    fun validateC(view: View){
+        if(answerC.isChecked && Controller.questions.get(id).answerCorrect == "C"){
+            correctas++ }
+        resetRadioButton(radioG)
+    }
+
+    fun validateD(view: View){
+        if(answerD.isChecked && Controller.questions.get(id).answerCorrect == "D"){
+            correctas++ }
+        resetRadioButton(radioG)
+    }
+
     fun resetRadioButton(view: View){
+
         radioG.clearCheck()
         id++
     }
 
     fun loadQuestion() {
-        if (maxQuestion == Controller.questions.size){
-            finish()
+        if (maxQuestion == id){
+            val intent = Intent(this, ScoreActivity::class.java)
+            println(correctas)
+            intent.putExtra("score", (correctas*100)/maxQuestion)
+            startActivity(intent)
         }
         else{
             var iden = id +1

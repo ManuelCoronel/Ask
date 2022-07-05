@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ask">
         <activity
-            android:name=".ScoreActivity"
+            android:name=".vista.ScoreActivity"
             android:exported="false" />
         <activity
             android:name=".vista.MatchActivity"
